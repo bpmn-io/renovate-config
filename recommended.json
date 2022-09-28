@@ -22,12 +22,6 @@
       "semanticCommitType": "deps"
     },
     {
-      "matchDepTypes": [
-        "devDependencies", "dependencies"
-      ],
-      "semanticCommitType": "deps"
-    },
-    {
       "matchPackagePatterns": [
         "dmn-js.*",
         "table-js"
