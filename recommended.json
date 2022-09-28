@@ -6,6 +6,9 @@
     ":disableDependencyDashboard"
   ],
   "labels": ["dependencies"],
+  "reviewers": [
+    "team:modeling-dev"
+  ],
   "packageRules": [
     {
       "schedule": ["after 8pm and before 5am every weekday", "every weekend"],
