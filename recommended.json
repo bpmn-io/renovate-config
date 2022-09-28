@@ -11,17 +11,6 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    },
-    {
-      "matchDepTypes": [
-        "devDependencies",
-        "dependencies"
-      ],
-      "semanticCommitType": "deps"
-    },
-    {
       "matchPackagePatterns": [
         "dmn-js.*",
         "table-js"
@@ -77,6 +66,17 @@
       ],
       "groupName": "rollup* dependencies",
       "groupSlug": "rollup"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies"
+      ],
+      "semanticCommitType": "deps"
     }
   ],
   "semanticCommitScope": ""
