@@ -69,7 +69,8 @@
     },
     {
       "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "matchPackagePatterns": [
