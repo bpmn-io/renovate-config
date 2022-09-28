@@ -15,6 +15,21 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     },
     {
+      "schedule": ["at any time"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackagePatterns": [
+        "@bpmn-io.*",
+        "diagram-js.*",
+        "bpmn-js.*",
+        "min-dash",
+        "min-dom",
+        "tiny-svg",
+        "dmn-js.*",
+        "table-js",
+        "@?camunda.*"
+      ]
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "automerge": true
     },
