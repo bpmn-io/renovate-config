@@ -2,5 +2,81 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:js-lib"
-  ]
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies", "dependencies"
+      ],
+      "semanticCommitType": "deps"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies", "dependencies"
+      ],
+      "semanticCommitType": "deps"
+    },
+    {
+      "matchPackagePatterns": [
+        "dmn-js.*",
+        "table-js"
+      ],
+      "groupName": "dmn-js dependencies",
+      "groupSlug": "dmn-js"
+    },
+    {
+      "matchPackagePatterns": [
+        "form-js.*",
+        "@bpmn-io/form-js.*"
+      ],
+      "groupName": "form-js dependencies",
+      "groupSlug": "form-js"
+    },
+    {
+      "matchPackagePatterns": [
+        "eslint.*"
+      ],
+      "groupName": "eslint* dependencies",
+      "groupSlug": "eslint"
+    },
+    {
+      "matchPackagePatterns": [
+        "karma.*",
+        "puppeteer"
+      ],
+      "groupName": "karma* dependencies",
+      "groupSlug": "karma"
+    },
+    {
+      "matchPackagePatterns": [
+        "webpack",
+        ".*-loader"
+      ],
+      "groupName": "webpack* dependencies",
+      "groupSlug": "webpack"
+    },
+    {
+      "matchPackagePatterns": [
+        "mocha",
+        "chai",
+        "sinon",
+        "sinon-chai"
+      ],
+      "groupName": "test dependencies",
+      "groupSlug": "test"
+    },
+    {
+      "matchPackagePatterns": [
+        "@rollup/.*",
+        "rollup.*"
+      ],
+      "groupName": "rollup* dependencies",
+      "groupSlug": "rollup"
+    }
+  ],
+  "semanticCommitScope": null
 }
