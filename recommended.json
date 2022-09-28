@@ -4,6 +4,7 @@
     "config:js-lib",
     ":preserveSemverRanges"
   ],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin"],
