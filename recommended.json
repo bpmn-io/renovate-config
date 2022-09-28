@@ -12,11 +12,13 @@
   "packageRules": [
     {
       "schedule": ["after 8pm and before 5am every weekday", "every weekend"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     },
     {
       "schedule": ["at any time"],
-      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
       "matchPackagePatterns": [
         "@bpmn-io.*",
         "diagram-js.*",
@@ -28,10 +30,6 @@
         "table-js",
         "@?camunda.*"
       ]
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
     },
     {
       "matchDepTypes": [
