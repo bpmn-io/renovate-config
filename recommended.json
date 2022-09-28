@@ -16,7 +16,7 @@
     },
     {
       "schedule": ["at any time"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch", "pin"],
       "matchPackagePatterns": [
         "@bpmn-io.*",
         "diagram-js.*",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
     },
     {
@@ -98,5 +98,5 @@
       "groupSlug": "rollup"
     }
   ],
-  "semanticCommitScope": null
+  "semanticCommitScope": ""
 }
