@@ -72,13 +72,18 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": "chore"
+    },
+    {
       "matchDepTypes": [
-        "devDependencies",
-        "peerDependencies",
-        "dependencies"
+        "dependencies",
+        "peerDependencies"
       ],
       "semanticCommitType": "deps"
     }
   ],
-  "semanticCommitScope": ""
+  "semanticCommitScope": null
 }
