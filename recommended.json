@@ -12,12 +12,16 @@
   "packageRules": [
     {
       "schedule": ["after 8pm and before 5am every weekday", "every weekend"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin"],
       "automerge": true
     },
     {
       "matchDepTypes": [
-        "devDependencies", "dependencies"
+        "devDependencies",
+        "dependencies"
       ],
       "semanticCommitType": "deps"
     },
