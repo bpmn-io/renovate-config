@@ -68,12 +68,13 @@
       "groupSlug": "rollup"
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "automerge": true
     },
     {
       "matchDepTypes": [
         "devDependencies",
+        "peerDependencies",
         "dependencies"
       ],
       "semanticCommitType": "deps"
