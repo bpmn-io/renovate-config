@@ -73,6 +73,15 @@
       "automergeType": "branch"
     },
     {
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/bpmn-io/",
+        "https://github.com/zeebe-io/",
+        "https://github.com/camunda/"
+      ],
+      "schedule": "at any time"
+    },
+    {
       "matchPackagePatterns": [
         ".*"
       ],
@@ -86,5 +95,6 @@
       "semanticCommitType": "deps"
     }
   ],
-  "semanticCommitScope": null
+  "semanticCommitScope": null,
+  "schedule": ["before 2am on monday"]
 }
