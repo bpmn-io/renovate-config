@@ -73,6 +73,10 @@
       "automergeType": "branch"
     },
     {
+      "matchUpdateTypes": ["major"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/bpmn-io/",
