@@ -73,17 +73,15 @@
       "automergeType": "branch"
     },
     {
-      "matchUpdateTypes": ["major"],
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    },
-    {
       "matchSourceUrlPrefixes": [
         "https://github.com/bpmn-io/",
         "https://github.com/zeebe-io/",
         "https://github.com/camunda/"
       ],
-      "schedule": "at any time"
+      "matchUpdateTypes": ["minor", "patch", "bump", "pin", "major"],
+      "schedule": "at any time",
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "matchPackagePatterns": [
