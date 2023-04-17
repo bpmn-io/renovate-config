@@ -6,9 +6,6 @@
     ":disableDependencyDashboard"
   ],
   "labels": ["dependencies"],
-  "reviewers": [
-    "team:modeling-dev"
-  ],
   "packageRules": [
     {
       "matchPackagePatterns": [
