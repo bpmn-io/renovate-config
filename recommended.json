@@ -67,7 +67,8 @@
     {
       "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "automergeSchedule": "after 10pm and before 5:00am"
     },
     {
       "matchSourceUrlPrefixes": [
@@ -75,10 +76,11 @@
         "https://github.com/zeebe-io/",
         "https://github.com/camunda/"
       ],
-      "matchUpdateTypes": ["minor", "patch", "bump", "pin", "major"],
+      "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "schedule": "at any time",
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "automergeSchedule": "after 10pm and before 5:00am"
     },
     {
       "matchPackagePatterns": [
@@ -95,5 +97,5 @@
     }
   ],
   "semanticCommitScope": null,
-  "schedule": ["before 2am on monday"]
+  "schedule": ["after 10pm and before 5:00am"]
 }
