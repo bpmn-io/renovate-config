@@ -97,5 +97,9 @@
     }
   ],
   "semanticCommitScope": null,
-  "schedule": ["after 10pm and before 5:00am"]
+  "schedule": ["after 10pm and before 5:00am"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": true
+  }
 }
