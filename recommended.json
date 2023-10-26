@@ -100,6 +100,12 @@
   "schedule": ["after 10pm and before 5:00am"],
   "vulnerabilityAlerts": {
     "labels": ["security"],
-    "automerge": true
+    "automerge": true,
+    "matchDepTypes": [
+      "dependencies",
+      "devDependencies",
+      "peerDependencies"
+    ],
+    "semanticCommitType": "deps"
   }
 }
