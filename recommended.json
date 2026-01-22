@@ -94,6 +94,17 @@
         "peerDependencies"
       ],
       "semanticCommitType": "deps"
+    },
+    {
+      "matchCurrentVersion": "*",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "karma-chrome-launcher"
+      ],
+      "replacementName": "karma-chrome-launcher-2",
+      "replacementVersion": "3.3.0"
     }
   ],
   "semanticCommitScope": null,
