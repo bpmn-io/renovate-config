@@ -108,6 +108,9 @@
       "replacementVersion": "3.3.0"
     }
   ],
+  "github-actions": {
+    "minimumReleaseAge": "8 days"
+  },
   "semanticCommitScope": null,
   "schedule": ["after 10pm and before 5:00am"],
   "vulnerabilityAlerts": {
