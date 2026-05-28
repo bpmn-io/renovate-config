@@ -72,10 +72,9 @@
       "automergeSchedule": "after 10pm and before 5:00am"
     },
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/bpmn-io/",
-        "https://github.com/zeebe-io/",
-        "https://github.com/camunda/"
+      "matchSourceUrls": [
+        "https://github.com/bpmn-io/*",
+        "https://github.com/camunda/*"
       ],
       "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "schedule": "at any time",
