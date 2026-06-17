@@ -76,6 +76,13 @@
         "https://github.com/bpmn-io/*",
         "https://github.com/camunda/*"
       ],
+      "minimumReleaseAge": "0 days"
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/bpmn-io/*",
+        "https://github.com/camunda/*"
+      ],
       "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "schedule": "at any time",
       "automerge": true,
@@ -107,6 +114,7 @@
       "replacementVersion": "3.3.0"
     }
   ],
+  "minimumReleaseAge": "8 days",
   "github-actions": {
     "minimumReleaseAge": "8 days"
   },
