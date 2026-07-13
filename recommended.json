@@ -112,6 +112,28 @@
       ],
       "replacementName": "karma-chrome-launcher-2",
       "replacementVersion": "3.3.0"
+    },
+    {
+      "matchCurrentVersion": "*",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "npm-run-all"
+      ],
+      "replacementName": "npm-run-all2",
+      "replacementVersion": "9.0.2"
+    },
+    {
+      "matchCurrentVersion": "*",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "cpx"
+      ],
+      "replacementName": "cpx2",
+      "replacementVersion": "9.0.0"
     }
   ],
   "minimumReleaseAge": "8 days",
