@@ -66,6 +66,27 @@
       "groupSlug": "rollup"
     },
     {
+      "description": "TODO(@barmac): remove once we are ready to adopt",
+      "matchPackageNames": [
+        "eslint"
+      ],
+      "allowedVersions": "<10.0.0"
+    },
+    {
+      "description": "TODO(@barmac): remove once we are ready to adopt",
+      "matchPackagePatterns": [
+        "@babel/.*"
+      ],
+      "allowedVersions": "<8.0.0"
+    },
+    {
+      "description": "TODO(@barmac): remove once we are ready to adopt",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "<6.0.0"
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
       "automerge": true,
       "automergeType": "branch",
