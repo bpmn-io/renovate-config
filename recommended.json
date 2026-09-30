@@ -7,6 +7,9 @@
     "replacements:all"
   ],
   "labels": ["dependencies"],
+  "automerge": true,
+  "automergeType": "branch",
+  "automergeSchedule": "after 10pm and before 5:00am",
   "packageRules": [
     {
       "matchPackagePatterns": [
@@ -87,34 +90,17 @@
       "allowedVersions": "<6.0.0"
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
-      "automerge": true,
-      "automergeType": "branch",
-      "automergeSchedule": "after 10pm and before 5:00am"
-    },
-    {
+      "description": "Own packages: update immediately, no release age",
       "matchSourceUrls": [
         "https://github.com/bpmn-io/*",
         "https://github.com/camunda/*"
       ],
-      "minimumReleaseAge": "0 days"
+      "minimumReleaseAge": "0 days",
+      "schedule": "at any time"
     },
     {
-      "matchSourceUrls": [
-        "https://github.com/bpmn-io/*",
-        "https://github.com/camunda/*"
-      ],
-      "matchUpdateTypes": ["minor", "patch", "bump", "pin"],
-      "schedule": "at any time",
-      "automerge": true,
-      "automergeType": "branch",
-      "automergeSchedule": "after 10pm and before 5:00am"
-    },
-    {
-      "matchPackagePatterns": [
-        ".*"
-      ],
-      "semanticCommitType": "chore"
+      "matchManagers": ["github-actions"],
+      "semanticCommitType": "ci"
     },
     {
       "matchDepTypes": [
@@ -155,22 +141,21 @@
       ],
       "replacementName": "cpx2",
       "replacementVersion": "9.0.0"
+    },
+    {
+      "description": "Never automerge majors (must stay last)",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ],
   "minimumReleaseAge": "8 days",
   "github-actions": {
     "minimumReleaseAge": "8 days"
   },
+  "semanticCommitType": "chore",
   "semanticCommitScope": null,
   "schedule": ["after 10pm and before 5:00am"],
   "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "automerge": true,
-    "matchDepTypes": [
-      "dependencies",
-      "devDependencies",
-      "peerDependencies"
-    ],
-    "semanticCommitType": "deps"
+    "labels": ["security"]
   }
 }
