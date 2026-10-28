@@ -90,6 +90,14 @@
       "allowedVersions": "<6.0.0"
     },
     {
+      "description": "Node.js 24 is our target version",
+      "matchPackageNames": [
+        "node",
+        "@types/node"
+      ],
+      "allowedVersions": "<25.0.0"
+    },
+    {
       "description": "Own packages: update immediately, no release age",
       "matchSourceUrls": [
         "https://github.com/bpmn-io/*",
