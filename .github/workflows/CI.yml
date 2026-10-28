@@ -16,4 +16,4 @@ jobs:
         with:
           node-version: 24
       - name: Validate Renovate configs
-        run: npx --yes --package renovate renovate-config-validator recommended.json security-only.json
+        run: npx --yes --package renovate renovate-config-validator --strict recommended.json security-only.json
