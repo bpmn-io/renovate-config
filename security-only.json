@@ -10,7 +10,7 @@
       "enabled": false,
       "groupName": "everything",
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["*"],
+      "matchPackageNames": ["*"],
       "separateMajorMinor": false
     }
   ],

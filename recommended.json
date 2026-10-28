@@ -12,58 +12,58 @@
   "automergeSchedule": "after 10pm and before 5:00am",
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "dmn-js.*",
-        "table-js"
+      "matchPackageNames": [
+        "/dmn-js.*/",
+        "/table-js/"
       ],
       "groupName": "dmn-js dependencies",
       "groupSlug": "dmn-js"
     },
     {
-      "matchPackagePatterns": [
-        "form-js.*",
-        "@bpmn-io/form-js.*"
+      "matchPackageNames": [
+        "/form-js.*/",
+        "/@bpmn-io/form-js.*/"
       ],
       "groupName": "form-js dependencies",
       "groupSlug": "form-js"
     },
     {
-      "matchPackagePatterns": [
-        "eslint.*"
+      "matchPackageNames": [
+        "/eslint.*/"
       ],
       "groupName": "eslint* dependencies",
       "groupSlug": "eslint"
     },
     {
-      "matchPackagePatterns": [
-        "karma.*",
-        "puppeteer"
+      "matchPackageNames": [
+        "/karma.*/",
+        "/puppeteer/"
       ],
       "groupName": "karma* dependencies",
       "groupSlug": "karma"
     },
     {
-      "matchPackagePatterns": [
-        "webpack",
-        ".*-loader"
+      "matchPackageNames": [
+        "/webpack/",
+        "/.*-loader/"
       ],
       "groupName": "webpack* dependencies",
       "groupSlug": "webpack"
     },
     {
-      "matchPackagePatterns": [
-        "mocha",
-        "chai",
-        "sinon",
-        "sinon-chai"
+      "matchPackageNames": [
+        "/mocha/",
+        "/chai/",
+        "/sinon/",
+        "/sinon-chai/"
       ],
       "groupName": "test dependencies",
       "groupSlug": "test"
     },
     {
-      "matchPackagePatterns": [
-        "@rollup/.*",
-        "rollup.*"
+      "matchPackageNames": [
+        "/@rollup/.*/",
+        "/rollup.*/"
       ],
       "groupName": "rollup* dependencies",
       "groupSlug": "rollup"
@@ -77,8 +77,8 @@
     },
     {
       "description": "TODO(@barmac): remove once we are ready to adopt",
-      "matchPackagePatterns": [
-        "@babel/.*"
+      "matchPackageNames": [
+        "/@babel/.*/"
       ],
       "allowedVersions": "<8.0.0"
     },
@@ -162,7 +162,7 @@
   },
   "semanticCommitType": "chore",
   "semanticCommitScope": null,
-  "schedule": ["after 10pm and before 5:00am"],
+  "schedule": ["after 10pm", "before 5:00am"],
   "vulnerabilityAlerts": {
     "labels": ["security"]
   }
